@@ -1,0 +1,36 @@
+---
+import Service from "../cards/Service.astro";
+import Info from "../cards/Info.astro";
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+import Title from "../shared/Title.astro";
+
+---
+
+<section id="about-us">
+    <Container className="space-y-10 md:sapce-y-12">
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+            <Title>
+                PRODUCTOS DE LA RUTA MAGICA DEL CAFE DEL HUILA
+            </Title>
+
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <Service title="cafe" description="es la opción más natural porque en el proceso del tostado no interviene ningún otro elemento extra, es decir que solo se tuesta con calor.">
+                <span slot="icon">
+                    <img src="/images/forestal.png" width="250" height="350">
+                </span>
+            </Service>
+            <Service title="arequipe" description="Es un dulce de leche con café, además es un producto de sabor dulce y consistencia blanda. La vida útil del producto tiene una duración sanitaria de 90 días.">
+                <span slot="icon">
+                    <img src="/images/maxti.png" width="250" height="350">
+                </span>
+            </Service>
+            <Service title="vinos" description="es un aperitivo vínico fermentado de uva y café con un 12% de alcohol, exquisito para maridar cualquier preparación como carnes y platillos como tablas de queso, postres o pastelería.">
+                <span slot="icon">
+                    <img src="/images/vino.png" width="250" height="350">
+                </span>
+            </Service>
+
+    </Container>
+</section>

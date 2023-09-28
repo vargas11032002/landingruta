@@ -1,0 +1,50 @@
+---
+import Service from "../cards/Service.astro";
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+import Title from "../shared/Title.astro";
+
+---
+
+<section id="services">
+    <Container className="space-y-10 md:sapce-y-12">
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+            <Title>
+                LUGARES DE LA RUTA MAGICA DEL CAFE DEL HUILA
+            </Title>
+
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <Service title="EL BALCON DEL HUILA" description="Es un mirador natural ubicado en el municipio de Garzon, desde el cual se puede apreciar una hermosa vista de la cordillera de los Andes y el valle del río Magdalena. Es uno de los lugares más visitados de la Ruta Mágica del Café.">
+                <span slot="icon">
+                    <img src="/logos/balcon.png" width="250" height="350">
+                </span>
+            </Service>
+            <Service title="SAN JOAQUIN" description="Es un hospedaje y restaurante ubicado en el municipio de Garzon, Huila. Se caracteriza por su clima cálido y su paisaje montañoso. En San Joaquín se pueden disfrutar de la gastronomía típica de la región y alojarse en habitaciones con vista a las montañas.">
+                <span slot="icon">
+                    <img src="/logos/san.png" width="250" height="350"> 
+                </span>
+            </Service>
+            <Service title="MIRADOR LA PRIMAVERA" description="Es un mirador ubicado en el municipio de Garzon, desde el cual se puede apreciar una hermosa vista del valle del río Magdalena y los nevados del Huila. Es un lugar ideal para relajarse y disfrutar de la naturaleza.">
+                <span slot="icon">
+                    <img src="/logos/primavera.png" width="250" height="350"> 
+                </span>
+            </Service>
+            <Service title="LA MANO DE GIGANTE" description="Es un mirador del municipio de Gigante. Tiene una altura de 15 metros y se asemeja a una mano gigante. Es uno de los lugares más emblemáticos de la Ruta Mágica del Café.">
+                <span slot="icon">
+                    <img src="/logos/mano.png" width="250" height="350">
+                </span>
+            </Service>
+            <Service title="BRISAS DE MIRTAYUU" description="Es un mirador del municipio de Gigante. Es uno de los lugares más emblemáticos de la Ruta Mágica del Café.">
+                <span slot="icon">
+                    <img src="/logos/brisas.png" width="250" height="350">
+                </span>
+            </Service>
+            <Service title="LA PALESTINA" description="Es una finca recreacional ubicada en el municipio de Garzon, Huila. Se caracteriza por su clima cálido y su paisaje montañoso. En La Palestina se pueden realizar caminatas ecológicas, disfrutar de la gastronomía típica de la región y alojarse en cabañas rústicas.">
+                <span slot="icon">
+                    <img src="/logos/palestina.png" width="250" height="350">
+                </span>
+            </Service>
+        </div>
+    </Container>
+</section>

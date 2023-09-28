@@ -1,0 +1,64 @@
+---
+import Button from "../shared/Button.astro";
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+import ByNumber from "./ByNumber.astro";
+
+---
+
+
+    
+</style>
+<section class="relative pt-32 lg:pt-36">
+    <Container className={"flex flex-col lg:flex-row gap-10 lg:gap-12"}>
+        <div class="absolute w-full lg:w-1/2 inset-y-0 lg:right-0 ">
+            <span class="absolute -left-6 md:left-4 top-24 lg:top-28 w-24 h-24 rotate-90 skew-x-12 rounded-3xl bg-green-400 blur-xl opacity-60 lg:opacity-95 lg:block hidden"></span>
+            <span class="absolute right-4 bottom-12 w-24 h-24 rounded-3xl bg-primary blur-xl opacity-80"></span>
+        </div>
+        <span class="w-4/12 lg:w-2/12 aspect-square bg-gradient-to-tr from-primary to-green-400 absolute -top-5 lg:left-0 rounded-full skew-y-12 blur-2xl opacity-40 skew-x-12 rotate-90"></span>
+        <div class="relative flex flex-col items-center text-center lg:text-left lg:py-7 xl:py-8 
+        lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2">
+            
+            <h1 class="text-3xl/tight sm:text-4xl/tight md:text-5xl/tight xl:text-6xl/tight
+             font-bold text-heading-1">
+             LA RUTA MAGICA DEL CAFE DEL HUILA  <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600"></span>
+            </h1>
+            <Paragraph className="mt-8">
+
+                <span>HISTORIA</span>
+                <br>
+                <br>
+
+                La Ruta Mágica del Café es un proyecto turístico que se inició en el año 2021 en los municipios de Garzón y Gigante, en el departamento del Huila, Colombia. El objetivo de esta ruta es promover el turismo agroturístico en la región, a través de la experiencia de conocer el proceso de producción del café, desde la siembra hasta la taza.
+
+                La historia de la Ruta Mágica del Café se remonta a finales del siglo XIX, cuando los colonos italianos llegaron a la región para sembrar café. Estos colonos trajeron consigo sus tradiciones y cultura, que se mezclaron con la cultura colombiana, dando origen a una región única y especial.
+                
+                En el año 2021, la Gobernación del Huila, en conjunto con la cooperación internacional italiana, lanzaron el proyecto de la Ruta Mágica del Café. Este proyecto contó con una inversión de más de 1.400 millones de pesos, y se ha convertido en un importante motor de desarrollo turístico para la región.
+                
+                La Ruta Mágica del Café ofrece a los visitantes la oportunidad de conocer de primera mano el proceso de producción del café. Los turistas pueden visitar fincas cafeteras, participar en talleres de catación, y degustar el café de la región. Además, la ruta ofrece una variedad de atractivos turísticos, como paisajes naturales, sitios históricos, y actividades culturales.
+                
+                En los últimos años, la Ruta Mágica del Café se ha consolidado como un destino turístico importante en el Huila. La ruta ha recibido a más de 10.000 visitantes nacionales e internacionales, y se espera que este número siga creciendo en los próximos años.
+                
+                A continuación, se presentan algunos de los hitos más importantes en la historia de la Ruta Mágica del Café:
+                
+                2021: Lanzamiento del proyecto de la Ruta Mágica del Café.
+                2022: Inauguración de la señalización de la ruta.
+                2023: Visita de más de 10.000 visitantes nacionales e internacionales.
+                La Ruta Mágica del Café es un proyecto que ha tenido un impacto positivo en el desarrollo turístico y económico de la región. La ruta ha contribuido a la creación de empleos, al fortalecimiento de las comunidades locales, y a la promoción de la cultura cafetera del Huila.
+            </Paragraph>
+            <div class="mt-10  w-full flex max-w-md mx-auto lg:mx-0">
+                <div class="flex sm:flex-row flex-col gap-5 w-full">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
+            
+            <img src="/images/cafess.png" alt="Hero image" width="50%" height="50%" class="lg:absolute lg:w-full lg:max-h-screen rounded-3xl object-cover top-50%  pt-60 ">
+          </div>
+              
+          
+    </Container>
+
+    <ByNumber/>
+</section>
